@@ -42,6 +42,20 @@ public class Main {
 		    box2.put_super(lst1); //강아지 동물 가능
 		    box2.put_sub(lst2); //치와와 가능
 		    
+		    
+		    Box.copy(box2, 동물농장); // box2에 있는 모든 동물들을 동물농장에 카피
+		    Box.copy(box3, 동물농장);
+		    Box.copy(box4, 동물농장);
+		    // Box.copy(box1, 동물농장); //이건 불가능!
+
+		    System.out.println("==box2 ");
+		    box2.show();
+		    System.out.println("==box3 ");
+		    box3.show();
+		    System.out.println("==box4 ");
+		    box4.show();
+		    System.out.println("==동물농장 ");
+		    동물농장.show();
 		
 
 	}
