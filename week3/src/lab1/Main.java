@@ -27,7 +27,7 @@ public class Main {
 		 
 		 System.out.println(dice.value);
 		 dice.구르기();
-		 System.out.println("랜덤하게 고른 값은" + dice.result + "입니다");
+		 System.out.println("랜덤하게 고른 값은 [" + dice.result + "] 입니다");
 
 	}
 
