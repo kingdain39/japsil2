@@ -12,7 +12,33 @@ public class Main {
 		//Runnable인터페이스로 만든 쓰레드
 		Thread t2 = new Thread(new MyRunnable());
 		t2.start();
+		
+		Thread t3 = new Thread(
+				new Runnable() {
+					@Override
+					public void run() {
+						for(int i=0 ;i<10; i++) {
+							System.out.println("익"+ i);
+						}
+					}
+				});
+		t3.start();
+		
+		Thread t4 = new Thread(
+				new Runnable() {
+					@Override
+					public void run() {
+						for(int i=0 ;i<10; i++) {
+							System.out.println("명"+ i);
+						}
+					}
+				});
+		
+		t4.start();
+		
+		
+		}
 
 	}
 
-}
+
