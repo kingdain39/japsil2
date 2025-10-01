@@ -22,7 +22,7 @@ public class 자동차경주 {
 			e.printStackTrace();
 		}
 		
-		car2.interrupt();
+		car2.interrupt(); //3초후 씽씽이에게 interrupt넣어줌. (외부에서 interrupt)들어가는 상황
 
 	}
 
