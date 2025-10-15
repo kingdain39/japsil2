@@ -19,10 +19,5 @@ public class Main {
 		CoffeeMaker coffeeMaker = new CoffeeMaker();
 		coffeeMaker.setCoffee(latte);
 		coffeeMaker.makeCoffee();
-		
-		
-		
-
 	}
-
 }
