@@ -13,12 +13,12 @@ public class Main {
 		
 		
 		//2. 훈이가 괴롭힘
-		a.setStrategy(new DanceStrategy());
+		a.setStrategy(new ActionMaskStrategy());
 		a.encounterSituation("훈이가 괴롭힘을 당한다!!");
 		
 		
 		//3. 유치원에서 장난
-		a.setStrategy(new ActionMaskStrategy());
+		a.setStrategy(new DanceStrategy());
 		a.encounterSituation("유치원에서 놀아요~~");
 		
 		

@@ -10,9 +10,9 @@ public class Manager {
 		this.coffeeFactory = coffeeFactory;
 	}
 	
-	public void getOrder(PaymentMethod paymentMethod, String order) {
+	public void getOrder(PaymentMethod paymentMethod, String order, String temp, String liqOption) {
 		
-		coffeeMaker.makeCoffee(coffeeFactory.prepareCoffeeIngredients(order));
+		coffeeMaker.makeCoffee(coffeeFactory.prepareCoffeeIngredients(order,temp,liqOption));
 		paymentMethod.pay(menu.getPrice(order));
 		System.out.println("주문하신 " + order + "나왔습니다~");
 	}
