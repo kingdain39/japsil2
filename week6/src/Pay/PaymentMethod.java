@@ -1,4 +1,4 @@
-package 커피메이커ver2;
+package Pay;
 
 public interface PaymentMethod {
 	 void pay(int price);

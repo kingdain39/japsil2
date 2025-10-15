@@ -1,4 +1,4 @@
-package 커피메이커ver2;
+package Machine;
 public interface CoffeeMachine {
 
     public String brew();

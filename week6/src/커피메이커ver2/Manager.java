@@ -1,5 +1,7 @@
 package 커피메이커ver2;
 
+import Pay.PaymentMethod;
+
 public class Manager {
 	CoffeeMaker coffeeMaker;
 	 Menu menu;
@@ -14,7 +16,6 @@ public class Manager {
 		
 		coffeeMaker.makeCoffee(coffeeFactory.prepareCoffeeIngredients(order,temp,liqOption));
 		paymentMethod.pay(menu.getPrice(order));
-		System.out.println("주문하신 " + order + "나왔습니다~");
 	}
 
 }

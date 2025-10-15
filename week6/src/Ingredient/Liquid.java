@@ -1,7 +1,9 @@
-package 커피메이커ver2;
+package Ingredient;
 
 public interface Liquid {
-	public String getColdLiquid();
 	public String getHotLiquid();
+	public String getColdLiquid();
+	
+	
 
 }

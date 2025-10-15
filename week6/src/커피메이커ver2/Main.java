@@ -1,5 +1,13 @@
 package 커피메이커ver2;
 
+import Machine.DripCoffeeMachine;
+import Machine.EspressoMachine;
+import Machine.MilkFrother;
+import Pay.Cash;
+import Pay.CreditCard;
+import Pay.KakaoPay;
+import Pay.PaymentMethod;
+
 public class Main {
 
 	public static void main(String[] args) {

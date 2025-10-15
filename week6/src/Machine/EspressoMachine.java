@@ -1,4 +1,5 @@
-package 커피메이커ver2;
+package Machine;
+
 public class EspressoMachine implements CoffeeMachine {
 
     public String brew(){

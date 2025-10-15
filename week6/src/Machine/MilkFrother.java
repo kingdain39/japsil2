@@ -1,4 +1,4 @@
-package 커피메이커ver2;
+package Machine;
 public class MilkFrother{
     public String frothMilk(String name){
     	return "Hot-Frothed" + name;
