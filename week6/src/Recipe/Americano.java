@@ -16,7 +16,7 @@ public class Americano implements Coffee {
 	}
 
 	public String prepare(){
-		if(temp.equalsIgnoreCase("hot")) return shot.prepare() + water.getHotLiquid();
+		if(temp.equalsIgnoreCase("hot")) return shot.prepare() +" + "+ water.getHotLiquid();
 		else return shot.prepare() +" + " + water.getColdLiquid()+ " + " + iceMaker.getIce();
     	
     }

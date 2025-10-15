@@ -20,7 +20,7 @@ public class Latte implements Coffee {
     @Override
 	public String prepare(){
     	// TODO Auto-generated method stub
-    	if(temp.equalsIgnoreCase("hot")) return shot.prepare() + milk.getHotLiquid();
+    	if(temp.equalsIgnoreCase("hot")) return shot.prepare() +" + "+ milk.getHotLiquid();
 		else return shot.prepare() +" + " + milk.getColdLiquid()+ " + " + iceMaker.getIce();
     	
     	

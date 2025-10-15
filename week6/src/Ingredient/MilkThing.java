@@ -23,6 +23,6 @@ public class MilkThing implements Liquid{
 	@Override
 	public String getColdLiquid() {
 		// TODO Auto-generated method stub
-		return "Cold" + name;
+		return "Cold " + name;
 	}
 }

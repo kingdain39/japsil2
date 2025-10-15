@@ -20,9 +20,6 @@ private final MilkFrother frother;
 private final WaterBoiler waterBoiler;
 private final IceMaker iceMaker;
 
-
-
-
 public CoffeeFactory(CoffeeMachine espressoMachine, MilkFrother frother, WaterBoiler waterBoiler, IceMaker iceMaker) {
 
 	this.espressoMachine = espressoMachine;
@@ -30,10 +27,7 @@ public CoffeeFactory(CoffeeMachine espressoMachine, MilkFrother frother, WaterBo
 	this.waterBoiler = waterBoiler;
 	this.iceMaker = iceMaker;
 	
-	
-
 }
-
 
 
 public Coffee prepareCoffeeIngredients(String name, String temp, String liqOption) {
@@ -47,9 +41,6 @@ public Coffee prepareCoffeeIngredients(String name, String temp, String liqOptio
 			return new Espresso(espressoMachine);
 
 		}
-	
-	
-	
 
 	}
 

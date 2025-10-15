@@ -7,6 +7,7 @@ public class CoffeeMaker {
 
     public void makeCoffee(Coffee coffee){
     	System.out.println(coffee.prepare());
+    	
     }
 
 }
