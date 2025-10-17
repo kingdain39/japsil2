@@ -1,4 +1,4 @@
 package Recipe;
-public interface Coffee {
+public interface Recipe {
     public String prepare();
 }

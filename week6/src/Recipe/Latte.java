@@ -4,7 +4,7 @@ import Ingredient.MilkThing;
 import Machine.IceMaker;
 import Machine.MilkFrother;
 
-public class Latte implements Coffee {
+public class Latte implements Recipe {
     private Espresso shot;
     private MilkThing milk;
     private IceMaker iceMaker;

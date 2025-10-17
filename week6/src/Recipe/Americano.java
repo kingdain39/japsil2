@@ -3,7 +3,7 @@ package Recipe;
 import Ingredient.Water;
 import Machine.IceMaker;
 
-public class Americano implements Coffee {
+public class Americano implements Recipe {
     private Espresso shot;
     private Water water;
     private String temp;

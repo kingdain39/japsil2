@@ -1,4 +1,4 @@
-package 커피메이커ver2;
+package Worker;
 
 import java.util.HashMap;
 import java.util.Map;

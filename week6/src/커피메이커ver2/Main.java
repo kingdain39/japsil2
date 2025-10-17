@@ -19,6 +19,10 @@ import Pay.Cash;
 import Pay.CreditCard;
 import Pay.KakaoPay;
 import Pay.PaymentMethod;
+import Worker.CoffeeFactory;
+import Worker.CoffeeMaker;
+import Worker.Manager;
+import Worker.Menu;
 
 public class Main {
 
@@ -64,9 +68,9 @@ public class Main {
 		
 		
 		System.out.println("음료 주문 양식 : [메뉴명] [Hot,Ice] [우유옵션(우유음료인경우)]");
-		System.out.print("인원 수를 입력하세요 : ");
 		
-		for(int i=0; i<Integer.parseInt(br.readLine());i++){
+		
+		
 			String order = br.readLine();
 			orderList = order.split(" ");
 			
@@ -79,7 +83,7 @@ public class Main {
             
             manager.getOrder(currentPayment, orderName, temp, liqOption);
 			
-		}
+		
 		
 
 

@@ -1,4 +1,4 @@
-package 커피메이커ver2;
+package Worker;
 
 import Ingredient.MilkThing;
 import Ingredient.Water;
@@ -7,9 +7,9 @@ import Machine.IceMaker;
 import Machine.MilkFrother;
 import Machine.WaterBoiler;
 import Recipe.Americano;
-import Recipe.Coffee;
 import Recipe.Espresso;
 import Recipe.Latte;
+import Recipe.Recipe;
 
 //커피팩토리
 
@@ -30,18 +30,15 @@ public CoffeeFactory(CoffeeMachine espressoMachine, MilkFrother frother, WaterBo
 }
 
 
-public Coffee prepareCoffeeIngredients(String name, String temp, String liqOption) {
+public Recipe prepareCoffeeIngredients(String name, String temp, String liqOption) {
 	
-		switch (name) {
-		case "Latte":
-			return new Latte(new Espresso(espressoMachine), new MilkThing(frother, liqOption),temp,iceMaker);
-		case "Americano":
-			return new Americano(new Espresso(espressoMachine), new Water(waterBoiler),temp,iceMaker);
-		default:
-			return new Espresso(espressoMachine);
+	return new CoffeeBuilder(espressoMachine, frother, waterBoiler, iceMaker)
+            .type(name)
+            .temperature(temp)
+            .liquidOption(liqOption)
+            .build();
 
 		}
 
 	}
 
-}
